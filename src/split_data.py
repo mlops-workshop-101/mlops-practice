@@ -6,7 +6,9 @@ import argparse
 from pkgutil import get_data
 from sklearn.model_selection import train_test_split
 
-from load_data import load_safe_data, get_data, read_param
+from get_data import get_data, read_param
+
+from load_data import read_param
 
 
 def split_data(config_path):
