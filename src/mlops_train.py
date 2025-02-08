@@ -66,7 +66,7 @@ def train_and_evaluate(config_path):
         mlflow.log_metric("rmse", rmse)
         mlflow.log_metric("r2", r2)
         mlflow.log_metric("mae", mae)
-
+        
         tracking_uri_type = urlparse(mlflow.get_tracking_uri()).scheme
         if tracking_uri_type != "file":
             mlflow.sklearn.log_model(lr, "model", registered_model_name=mlflow_config["registered_model_name"])

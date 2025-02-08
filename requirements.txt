@@ -15,3 +15,4 @@ numpy
 mlflow
 scikit-learn
 psycopg2
+django
